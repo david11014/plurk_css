@@ -68,7 +68,7 @@ html, body {
 /* 河道 */
 /* 河道主框架 */
 #timeline_holder {
-	margin-top: 80px !important;
+	margin-top: 100px !important;
 	height: 83% !important;
 	min-height: 470px; 
     background-color: rgba(0,0,0,0);
@@ -86,7 +86,8 @@ html, body {
 #timeline_bg,
 #timeline_fg {
 	/*height: auto !important;*/
-	margin-bottom: 0px !important;
+	
+	margin-bottom: 10px !important;
 	min-height: 535px; 
     background-image:  url(""); /* 河道背景放這 */
 	background: transparant !important;
@@ -94,10 +95,8 @@ html, body {
 }
 /* 噗能出現的範圍 */
 #timeline_cnt {
-	top: 10% !important;
-	height: 80% !important;
-	
-	
+	top: 15% !important;
+	height: 65% !important;
 }
 .block_bg,
 .block_cnt,
@@ -109,7 +108,7 @@ html, body {
 /* 小螢幕(&lt;500) */
 .small_timeline,
 .small_timeline #timeline_holder {
-	height: 90% !important;
+	height: 85% !important;
 	min-height: 470px; 
 }
 /* 底部時間條 */
@@ -151,7 +150,7 @@ html, body {
 }
 /* 每日分隔線 */
 .day_bg {
-	height: 97% !important;
+	height: 99% !important;
 }
 .day_bg .div_inner {
 	background: none !important;
@@ -327,10 +326,7 @@ html, body {
 
 /*表情符號*/
 #emoticon_selecter {
-	
-	top: 15% !important;
-	left: 15% !important;
-
+	margin-top: 280px !important;
 }
 
 /* 向左向右回到最前按鈕 */
@@ -427,7 +423,7 @@ textarea#input_big, #more_options .auto_ta, #more_options select, .clipboard {
 	z-index: 900;
 	position: fixed !important;
 	left: -120px;
-	top: 90px !important;
+	top: 150px !important;
 	height: auto;
 	width: 0px !important;
 	overflow: visible;

@@ -69,34 +69,29 @@ html, body {
 /* 河道主框架 */
 #timeline_holder {
 	margin-top: 100px !important;
-	height: 83% !important;
+	height: 80% !important;
 	min-height: 470px; 
     background-color: rgba(0,0,0,0);
-	/* 漸層背景只有webkit支援 */
-	/*background:	-webkit-gradient(linear, 50% 60%, 50% 100%, from(#EEEEEE), to(#AAAAAA));
-	-moz-box-shadow:	0px 0px 20px rgba(0, 0, 0, 0.9);
-	-webkit-box-shadow:	0px 0px 20px rgba(0, 0, 0, 0.9);
-	box-shadow:			0px 0px 20px rgba(0, 0, 0, 0.9);*/
-    /* 圖檔位置 */
 	background-image: none;
-	background: transparant;
+	background: transparent;
+	border-bottom: 0px solid #000;
+	border-top: 0px solid rgba(0,0,0,0.3);
 }
 /* 河道 */
 /* 整體框架 */
 #timeline_bg,
 #timeline_fg {
-	/*height: auto !important;*/
 	
-	margin-bottom: 10px !important;
-	min-height: 535px; 
+	/*margin-bottom: 10px !important;*/
+	min-height: 500px; 
     background-image:  url(""); /* 河道背景放這 */
 	background: transparant !important;
 	
 }
 /* 噗能出現的範圍 */
 #timeline_cnt {
-	top: 15% !important;
-	height: 65% !important;
+	top: 120px !important;
+	height: 80% !important;
 }
 .block_bg,
 .block_cnt,
@@ -119,7 +114,8 @@ html, body {
 	border: none !important;
 }
 .div_bottom * {
-	color: black !important;
+	
+	color: rgba(255,255,255,0.6) !important;
 	z-index: 800;
 }
 /* 浮動噗浪時間 */
@@ -136,7 +132,6 @@ html, body {
 	-webkit-border-radius: 3px 3px 3px 3px;
 	border-radius: 3px 3px 3px 3px;
 	color: white;
-	/*text-shadow: 1px 1px 1px black;*/
 	font-size: 2em !important;
 	font-weight: bold;
 }
@@ -150,14 +145,14 @@ html, body {
 }
 /* 每日分隔線 */
 .day_bg {
-	height: 99% !important;
+	height: 100% !important;
 }
 .day_bg .div_inner {
 	background: none !important;
 	width: 0px !important;
 	border: none !important;
-	border-left: 1px solid rgba(255,255,255,0.2) !important;
-	border-right: 1px solid rgba(50,50,50,0.2) !important;
+	border-left: 0px solid rgba(255,255,255,0.2) !important;
+	border-right: 0px solid rgba(50,50,50,0.2) !important;
 }
 /* 通知 */
 #updater * {
@@ -167,7 +162,8 @@ html, body {
 	text-shadow: 1px 1px 3px black;
 }
 #updater { 
-	top: 75% !important;
+	top: 490px !important;
+	position: fixed !important;
 	background: none !important;
 	background-color: rgba(0,0,0,0.5) !important;
 	padding: 5px;
@@ -196,29 +192,54 @@ html, body {
 #filter_tab a.off_tab,
 #filter_tab a.off_tab:hover,
 #filter_tab a.filter_selected {
-	top: 90% !important;
-	color: black !important;
-	border: 1px solid black !important;
-	border-top: none !important;
-	background: #AAAAAA;
-	-moz-border-radius-bottomleft: 5px;
-	-moz-border-radius-bottomright: 5px;
-	-webkit-border-bottom-left-radius: 5px;
-	-webkit-border-bottom-right-radius: 5px;
-	border-bottom-left-radius: 5px;
-	border-bottom-right-radius: 5px;
+	
+	background: rgba(120, 120, 120, 0.27);
+	-moz-border-radius-bottomleft: 3px;
+	-moz-border-radius-bottomright: 3px;
+	-webkit-border-bottom-left-radius: 3px;
+	-webkit-border-bottom-right-radius: 3px;
+	border-bottom-left-radius: 3px;
+	border-bottom-right-radius: 3px;
 	text-decoration: none;
 	font-weight: bold;
+	text-shadow: 1px 1px 2px rgba(20, 20, 20, 1);
+	border: 0px solid rgba(100, 100, 100, 0.27) !important; /*no border*/
+	padding: 2 5 3 5 !important;
 }
 #filter_tab a.off_tab:hover,
 #filter_tab a.filter_selected {
-	background: #AAAAAA; /* Old browsers */
-	background: -moz-linear-gradient(top, #AAAAAA 0%, #FFFFFF 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#AAAAAA), color-stop(100%,#FFFFFF)); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top, #AAAAAA 0%,#FFFFFF 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top, #AAAAAA 0%,#FFFFFF 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(top, #AAAAAA 0%,#FFFFFF 100%); /* IE10+ */
-	background: linear-gradient(to bottom, #AAAAAA 0%,#FFFFFF 100%); /* W3C */
+	
+	/*背景漸層*/
+	background: rgba(100, 100, 100, 0.5); /* Old browsers */
+	background: -moz-linear-gradient(top, rgba(100, 100, 100, 0.5) 0%, rgba(120, 120, 120, 0.5) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(100, 100, 100, 0.5)), color-stop(100%,rgba(120, 120, 120, 0.5))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, rgba(100, 100, 100, 0.5) 0%,rgba(120, 120, 120, 0.5) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, rgba(100, 100, 100, 0.5) 0%,rgba(120, 120, 120, 0.5) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, rgba(100, 100, 100, 0.5) 0%,rgba(120, 120, 120, 0.5) 100%); /* IE10+ */
+	background: linear-gradient(to bottom, rgba(100, 100, 100, 0.5) 0%,rgba(120, 120, 120, 0.5) 100%); /* W3C */
+	text-shadow: 1px 1px 2px rgba(20, 20, 20, 1);
+	
+	color: rgba(230, 230, 230, 1)
+}
+#filter_tab
+{
+	position: fixed !important;
+	top: 0;
+	left: 50%;
+	margin-left: -300px;
+	
+}
+
+/*過濾標籤未讀噗個數*/
+.unread_generic{
+
+	padding: 0 2px;
+	background-color: rgba(255, 30, 20, 1);
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	color: white !important;
+
 }
 
 /* 噗浪單體 */
@@ -331,7 +352,8 @@ html, body {
 
 /* 向左向右回到最前按鈕 */
 .browse_button {
-	top: 80%;
+	top: 530px !important;
+	position: fixed !important;
 }
 /*同步訊息*/
 #sync_checked_form {
@@ -380,12 +402,13 @@ left: 140px !important;
 	-moz-box-shadow: 0px 0px 5px black;
 	-webkit-box-shadow: 0px 0px 5px black;
 	box-shadow: 0px 0px 5px black;
-	background: -moz-linear-gradient(top, rgba(50,50,50,0.2) 0%, rgba(100,100,100,0.9) 100%) !important; /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(50,50,50,0.2)), color-stop(100%,rgba(100,100,100,0.9))) !important; /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top, rgba(50,50,50,0.2) 0%,rgba(100,100,100,0.9) 100%) !important; /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top, rgba(50,50,50,0.2) 0%,rgba(100,100,100,0.9) 100%) !important; /* Opera 11.10+ */
-	background: -ms-linear-gradient(top, rgba(50,50,50,0.2) 0%,rgba(100,100,100,0.9) 100%) !important; /* IE10+ */
-	background: linear-gradient(to bottom, rgba(50,50,50,0.2) 0%,rgba(100,100,100,0.9) 100%) !important; /* W3C */
+	background: -moz-linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%,rgba(165, 172, 255, 0.2) 100%) !important; /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255, 255, 255, 0)), color-stop(100%,rgba(165, 172, 255, 0.2))) !important; /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%,rgba(165, 172, 255, 0.2) 100%) !important; /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%,rgba(165, 172, 255, 0.2) 100%) !important; /* Opera 11.10+ */
+	background: -ms-linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%,rgba(165, 172, 255, 0.2) 100%) !important; /* IE10+ */
+	background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%,rgba(165, 172, 255, 0.2) 100%) !important; /* W3C */
+	
 }
 textarea#input_big, #more_options .auto_ta, #more_options select, .clipboard {
 	border: 1px solid black;
@@ -423,7 +446,7 @@ textarea#input_big, #more_options .auto_ta, #more_options select, .clipboard {
 	z-index: 900;
 	position: fixed !important;
 	left: -120px;
-	top: 150px !important;
+	top: 130px !important;
 	height: auto;
 	width: 0px !important;
 	overflow: visible;
@@ -443,6 +466,7 @@ textarea#input_big, #more_options .auto_ta, #more_options select, .clipboard {
 	min-height: 20px;
 	height: auto !important;
 	clear: both !important;
+	
 }
 /* 資訊欄縮排 */
 .dash-segment-profile .segment-content {height: 200px !important;} /*資訊欄高度補丁*/
@@ -493,6 +517,7 @@ textarea#input_big, #more_options .auto_ta, #more_options select, .clipboard {
 	-webkit-transition: left 0.5s ease-out;
 	-moz-transition: left 0.5s ease-out;
 	-o-transition: left 0.5s ease-out;
+	
 }
 
 /* 各欄總設定 */
@@ -501,14 +526,18 @@ textarea#input_big, #more_options .auto_ta, #more_options select, .clipboard {
 	color: white !important;
 	padding: 3px 10px !important;
 	margin: 2px;
-	background-color: rgba(150,150,150,0.8);
-	-moz-box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.5);
-	-webkit-box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.5);
-	box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.5);
-	-moz-border-radius: 5px;
-	-webkit-border-radius: 5px;
-	border-radius: 5px;
+	background-color: rgba(224, 224, 224, 0.27);
+	-moz-box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.2);
+	-webkit-box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.2);
+	box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.2);
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	background-color: rgba(100, 100, 100, 0.27);
 }
+
+
+
 /* 各欄標題 */
 .segment-content h2 {
 	position: relative !important;
@@ -562,7 +591,7 @@ textarea#input_big, #more_options .auto_ta, #more_options select, .clipboard {
 
 /* 卡馬狀態欄 */
 #dash-stats {
-	height: 45px;
+	height: 25px;
 	-webkit-transition: height 0.5s ease-out 0.5s;
 	-moz-transition: height 0.5s ease-out 0.5s;
 	-o-transition: height 0.5s ease-out 0.5s;

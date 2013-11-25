@@ -4,6 +4,8 @@ Plurk CSS
 Modify from Howar31	https://github.com/howar31/NeoPlurkCSS3 
 
  <a href="http://www.plurk.com/installDesign/8514425-fc34fe94cd">點我直接安裝<a/>
+ 
+ <img src="http://i.imgur.com/bLVo551.png" alt="preview" height=40% width=40%>
 
 **佈景採用CSS3技術，IE瀏覽器可能會有部分不相容**
 

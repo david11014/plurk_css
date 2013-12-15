@@ -403,7 +403,7 @@ left: 140px !important;
 }
 .plurkaction.pane:hover,
 #reply_box:hover {
-	max-height: 100px !important;
+	max-height: 500px !important;
 	border: none !important;
 	
 	-moz-border-radius: 0px 0px 5px 5px;
@@ -436,6 +436,39 @@ textarea#input_big, #more_options .auto_ta, #more_options select, .clipboard {
 	-webkit-border-radius: 3px;
 	border-radius: 3px;
 }
+
+/*同步處理圖示 */
+.cmp_sync_off, .cmp_sync_on{
+
+background: transparent url("http://i.imgur.com/QF3VIzp.png") no-repeat;
+
+}
+
+/*私噗圖示 */
+.cmp_privacy_off, .cmp_privacy_on{
+
+background: transparent url("http://i.imgur.com/g6ODCiu.png") no-repeat;
+margin-top: 5px !important;
+
+}
+/*表情符號圖示 */
+/*
+img[src="http://static.plurk.com/static/icons/emoticon_off.png"],
+img[src="http://static.plurk.com/static/icons/emoticon_on.png"],
+img[src="http://static.plurk.com/static/icons/emoticon_mini_off.png"],
+img[src="http://static.plurk.com/static/icons/emoticon_mini_on.png"]
+{
+    filter:alpha(opacity=0); opacity:0; zoom:1;
+}
+.emoticon_selecter_img_on, .emoticon_selecter_img_off
+{
+    width: 32px; height: 32px;
+}
+.icons_holder
+{
+    background:url("http://i.imgur.com/ru6HSur.png") no-repeat 64px 2px !important;
+} */
+
 /* 私噗設定面板 */
 #more_options_link {
 	background-image: none;

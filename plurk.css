@@ -18,11 +18,19 @@ html, body {
 	height: 99%;
 	min-width: 650px; 
 	min-height: 650px; 
-	background-color: #395eb9;
 	background:	url("http://i.imgur.com/gOtkSdh.jpg") no-repeat top fixed;
+    color: #395eb9 !important;
 	
-    /*background-color: #4E85C6 !important;*/
-    color: #4E85C6 !important;
+	background-color: #395eb9 !important; /* Old browsers */
+	background-color: -moz-linear-gradient(left,  #395eb9 0%, #a5c9e5 100%) !important; /* FF3.6+ */
+	background-color: -webkit-gradient(linear, left top, right top, color-stop(0%,#395eb9), color-stop(100%,#a5c9e5)) !important; /* Chrome,Safari4+ */
+	background-color: -webkit-linear-gradient(left,  #395eb9 0%,#a5c9e5 100%) !important; /* Chrome10+,Safari5.1+ */
+	background-color: -o-linear-gradient(left,  #395eb9 0%,#a5c9e5 100%) !important; /* Opera 11.10+ */
+	background-color: -ms-linear-gradient(left,  #395eb9 0%,#a5c9e5 100%) !important; /* IE10+ */
+	background-color: linear-gradient(to right,  #395eb9 0%,#a5c9e5 100%) !important; /* W3C */
+	
+
+	
 }
 
 /* ³»ºÝbar */

@@ -3,7 +3,7 @@ Plurk CSS
 
 Modify from Howar31	https://github.com/howar31/NeoPlurkCSS3 
 
- <a href="http://www.plurk.com/installDesign/8514425-fc34fe94cd">點我直接安裝<a/>
+ <a href="http://www.plurk.com/installDesign/8514425-5f28efe3e8">點我直接安裝<a/>
  
  <img src="http://i.imgur.com/bLVo551.png" alt="preview">
 

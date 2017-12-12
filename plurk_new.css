@@ -1,0 +1,186 @@
+/**噗文範圍**/
+#timeline_cnt {
+	top: 20px !important;
+}
+#timeline_holder {
+	height:550px !important;
+}
+
+/**時間軸相關**/
+.div_inner, .day_bg .div_inner {
+    height: 12px;
+}
+
+#bottom_line{
+	bottom: 538px;
+}
+
+#time_show {
+	top: 54px !important;
+}
+
+/* 向左向右回到最前按鈕 */
+.browse_button {
+	top: 550px !important;
+}
+
+/**噗文過濾**/
+
+.timeline_control {
+    position: absolute;
+}
+
+/**發文面板**/
+.dash-group-form{
+	position: fixed !important;
+	bottom: 0 !important;
+	right: 22%!important;
+	width: 56% !important;
+	z-index: 910 !important;
+	overflow: hidden !important;
+	max-height: 60px;
+	color:black;
+	
+	-webkit-transition: max-height 1.0s ease-out 0s ,box-shadow 1.5s ease-out 0.5s, left 1.0s ease-out, right 1.0s ease-out,top 0.5s ease-out 0s;
+	-moz-transition: max-height 1.0s ease-out 0s ,box-shadow 1.5s ease-out 0.5s, left 1.0s ease-out, right 1.0s ease-out,top 0.5s ease-out 0s;
+	-o-transition: max-height 1.0s ease-out 0s ,box-shadow 1.5s ease-out 0.5s, left 1.0s ease-out, right 1.0s ease-out,top 0.5s ease-out 0s;
+}
+.dash-segment-post{
+	z-index: 1000 !important;
+}
+.plurkaction.pane textarea,
+#reply_box textarea {
+	max-height: 380px !important;
+}
+.plurkaction.pane *,
+#reply_box * {
+	text-shadow: 1px 1px 1px black;
+}
+#reply_box {
+	max-height: 50px;
+}
+
+.dash-group-form:hover{
+	max-height: 500px !important;
+	border: none !important;
+	/*top: 500px !important;*/
+	-moz-border-radius: 0px 0px 5px 5px;
+	-webkit-border-radius: 0px 0px 5px 5px;
+	border-radius: 1px 0px 5px 5px;
+	
+}
+textarea#input_big, #more_options .auto_ta, #more_options select, .clipboard {
+	border: 0px solid white;
+	
+	-moz-box-shadow: 1px 0px 5px 2px rgba(0, 0, 0, 0.2);
+	-webkit-box-shadow: 1px 0px 5px 2px rgba(0, 0, 0, 0.2);
+	box-shadow: 1px 0px 5px 2px rgba(0, 0, 0, 0.2); 
+	
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+}
+
+/* 噗浪單體 */
+.plurk .plurk_cnt {
+	
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	opacity: 0.6;
+	z-index: 825;
+}
+.plurk_cnt:hover {
+	-moz-box-shadow: 0px 0px 5px black;
+	-webkit-box-shadow: 0px 0px 5px black;
+	box-shadow: 0px 0px 5px black;
+	opacity: 1;
+}
+/* 未讀噗浪 */
+.new .plurk_cnt {
+	-moz-box-shadow: 0px 0px 10px black;
+	-webkit-box-shadow: 0px 0px 10px black;
+	box-shadow: 0px 0px 10px black;
+	opacity: 1;
+}
+/* 噗浪者姓名 */
+.plurk_cnt .name {
+	position: relative !important;
+	top: 22px;
+	font-size: 1.1em;
+	z-index: 855;
+}
+.list .plurk_cnt .name {
+	position: static !important;
+}
+/* 噗浪者頭像 */
+.p_img {
+	position: relative !important;
+	top: -15px;
+	left: 15px;
+	z-index: 850;
+}
+.p_img img {
+	min-width: 35px !important;
+	min-height: 35px !important;
+	border: 1px solid #888888;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+/* 噗浪回文 */
+.plurk_box {
+	-moz-box-shadow: 0px 0px 5px black;
+	-webkit-box-shadow: 0px 0px 5px black;
+	box-shadow: 0px 0px 5px black;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+.plurk_box .caption,
+.info_box {
+	color: black !important;
+	background-color: #CCCCCC !important;
+	font-weight: bold;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+/* 回文內容 */
+.plurk_box .plurk_cnt {
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	opacity: 1;
+}
+.plurk {
+	-moz-box-shadow:	none;
+	-webkit-box-shadow:	none;
+	box-shadow:			none;
+}
+/* 回文右邊的選項 */
+.response_time {
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        border-radius: 5px;
+}
+/* 回應計數 */
+.response_count {
+	border: none !important;
+	background: none !important;
+	color: #FFFFFF !important;
+	position: relative !important;
+	top: -10px;
+	left: -10px;
+	text-shadow: 0px 0px 5px black;
+	font-size: 2.5em;
+}
+/* footer */
+#footer ul {
+	max-width: 100%;
+	text-align: right ;
+	margin: 0 auto;
+}

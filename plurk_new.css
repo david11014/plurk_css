@@ -30,6 +30,10 @@
     position: absolute;
 }
 
+#dashboard_holder {
+	max-width: 56%;
+}
+
 /**發文面板**/
 .dash-group-form{
 	position: fixed !important;
